@@ -1,0 +1,122 @@
+﻿1.Nam mới mua một chiếc xe mới
+S -> NP VP
+VP -> VP NP
+VP -> ADVP VB
+NP -> CD NP
+NP -> UN NP
+NP -> NP ADJP
+NP -> Nam
+ADVP -> mới
+ADJP -> mới
+CD -> một
+VB -> mua
+UN -> chiếc
+NP -> xe
+2.Nam học bài ở trường
+S -> NP VP
+VP -> VP PP
+VP -> VB NP
+PP -> IN NP
+NP -> Nam 
+NP -> bài
+NP -> trường
+IN -> ở
+VB -> học
+3.Bạn Ngân rất xinh
+S -> NP VP
+NP -> PRP NP
+VP -> VB ADJP
+PRP -> Bạn
+NP -> Ngân
+VB -> rất
+ADJP -> xinh
+4.Một loài cá mới mới xuấtHiện ở ẤnĐộDương
+S -> NP VP
+NP -> CD NP
+NP -> NP ADJP
+NP -> NN NN
+VP -> VP PP
+VP -> ADVP VB
+PP -> IN NP
+NP -> ẤnĐộDương
+NN -> loài
+NN -> cá
+ADVP -> mới
+ADJP -> mới
+CD -> Một
+IN -> ở 
+VB -> xuấtHiện
+5.Tôi xin dâng vòng tay mởRộng
+S -> NP VP
+VP -> VB VP
+VP -> VB NP
+NP -> NP ADJP
+NP -> NN NN
+NP -> Tôi
+VB -> xin
+VB -> dâng
+NN -> vòng
+NN -> tay
+ADJP -> mởRộng
+6.Hoa chanh nở giữa vườn chanh
+S -> NP VP
+NP -> NN NN
+VP -> VB PP
+PP -> IN NP
+NN -> vườn
+NN -> chanh
+NN -> Hoa
+VB -> nở
+IN -> giữa
+7.Nhà em có hoa vàng trước ngõ
+S -> NP VP
+NP -> NN PRP
+VP -> VP PP
+VP -> VB NP
+NP -> NN ADJP
+PP -> IN NP
+NN -> Nhà
+NN -> hoa
+NP -> ngõ
+PRP -> em
+VB -> có
+ADJP -> vàng
+IN -> trước
+8. Ta sống mãi trong tìnhThương nỗiNhớ
+S -> NP VP
+VP -> VP PP
+VP -> VB ADVP
+PP -> IN NP
+NP -> NN NN
+NP -> Ta
+VB -> sống
+ADVP -> mãi
+IN -> trong
+NN -> tìnhThương
+NN -> nỗiNhớ
+9.Tôi xin người cứ gianDối
+S -> NP VP
+VP -> VP VP
+VP -> VB NP
+VP -> ADVP VB
+NP -> Tôi
+VB -> xin
+NP -> người
+ADVP -> cứ
+VB -> gianDối
+10. Nó vừa gặp mấy người bạn trường cũ
+S -> NP VP
+NP -> Nó
+NP -> NN NN
+NP -> NN ADJP
+NP -> Q NP
+NP -> NP NP
+VP -> VP NP
+VP -> ADVP VB
+NN -> người
+NN -> bạn
+NN -> trường
+VB -> gặp
+ADVP -> vừa
+ADJP -> cũ
+Q -> mấy

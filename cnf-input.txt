@@ -1,0 +1,11 @@
+S -> NP VP
+VP -> VB VP
+VP -> VB NP
+NP -> NP ADJP
+NP -> NN NN
+NP -> Tôi
+VB -> xin
+VB -> dâng
+NN -> vòng
+NN -> tay
+ADJP -> mởRộng
