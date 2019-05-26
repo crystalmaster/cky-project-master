@@ -1,11 +1,13 @@
 S -> NP VP
-VP -> VB VP
-VP -> VB NP
+VP -> VP NP
+VP -> ADVP VB
+NP -> CD NP
+NP -> UN NP
 NP -> NP ADJP
-NP -> NN NN
-NP -> Tôi
-VB -> xin
-VB -> dâng
-NN -> vòng
-NN -> tay
-ADJP -> mởRộng
+NP -> Nam
+ADVP -> mới
+ADJP -> mới
+CD -> một
+VB -> mua
+UN -> chiếc
+NP -> xe

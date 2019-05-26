@@ -16,8 +16,13 @@ def drawTree(table,sentence):
    n_left_q = 0
    check = 0
    n_left_s = 0
-   
+   height = 0
    while len(list_r) >= 0:
+      #print(height)
+      if len(list_r) == 0:
+         height = 0
+      if len(list_r) == 2:
+         height += 1
       x = int(start[0])
       y = int(start[1]) - 1
       
@@ -27,6 +32,9 @@ def drawTree(table,sentence):
             if n_left_q > 1:#Limited of node is 2
                n_left_q = 1
             cfg = cfg + ')'* n_left_q
+            if height == 2:
+               cfg = cfg + ')'
+               n_q = n_q - 1
             n_q = n_q - n_left_q
             n_left_s = n_left_s - n_left_q
             n_left_q = 0
@@ -41,12 +49,9 @@ def drawTree(table,sentence):
             
          else: 
             break #over loop
-      else:
-         
+      else: 
          n_left_s = n_left_s + 1
-
          n_q = n_q + 1
-        
          if check == 1:
             check = 0
             n_left_q = n_left_q + 1
@@ -54,7 +59,7 @@ def drawTree(table,sentence):
          start = table[x][y][1].split(' ')
          list_r.append(table[x][y][2])
    cfg = cfg + ')'*(n_q)
-   print(cfg)
+   #print(cfg)
    t = Tree.fromstring(cfg)
    t.draw()
 def drawTable(table,sentence, container):
