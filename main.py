@@ -26,7 +26,7 @@ def CKY(sentence, cnf, container, check):
         table[k-1][k-1] = cnf[(sentence[k-1],)]
         result[k-1][k-1] = cnf[(sentence[k-1],)]
         if(check == 0):
-            ui.drawTable1(table,sentence)
+            ui.drawTable(table,sentence,1)
         
         for i in range (k - 2, -1, -1):
             for j in range (1, k):
@@ -44,7 +44,7 @@ def CKY(sentence, cnf, container, check):
                                 else:
                                     table[i][k-1] = table[i][k-1] + value
                                 if(check == 0):
-                                    ui.drawTable1(table,sentence)
+                                    ui.drawTable(table,sentence,1)
                 
     # for k in range(size_of_sentence):
     #     print(table[k])
@@ -65,7 +65,7 @@ def MainView (frame):
     def drawTree():
         st = sentences.get().split(' ')
         table = CKY(st,cnf,container,1)
-        ui.drawTable(table,st,container)
+        ui.drawTable(table,st,0)
         ui.drawTree(table,st)
     textBox = tk.Entry(buttonframe, bd = 2, textvariable = sentences)
     textBox.pack(side='left')
@@ -79,5 +79,5 @@ if __name__ == "__main__":
     root.title('CKY algorithm')
     strIntpur = MainView(root)
     cnf = create_cnf("cnf-input.txt")
-    root.wm_geometry("1200x600")
+    #root.wm_geometry("1200x600")
     root.mainloop()

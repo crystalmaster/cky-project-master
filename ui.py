@@ -62,33 +62,7 @@ def drawTree(table,sentence):
    #print(cfg)
    t = Tree.fromstring(cfg)
    t.draw()
-def drawTable(table,sentence, container):
-   dt = container
-   size = len (sentence)
-
-   xx,yy = 20 , 30
-   for index in range(size + 1):
-      if index == 0 :
-         RB = Tk.Button(dt, bd =8, width = 12, text = index,fg = 'black')
-         RB.place(x=xx, y = yy)
-         xx = xx + 130
-      else: 
-         RB = Tk.Button(dt, bd =8, width = 12, text = str(index) + ' '+sentence[index - 1] ,fg = 'black')
-         RB.place(x=xx, y = yy)
-         xx = xx + 130
-   xx = 20
-   yy = yy + 60
-   for index  in range(size):
-      CB = Tk.Button(dt, bd =8, width = 12, text = index,fg = 'black')
-      CB.place(x=xx, y = yy)
-      xx = xx + 130
-      for jdex in range(size):
-         C = Tk.Button(dt, bd =8, width = 12, text = table[index][jdex],fg = 'black')
-         C.place(x=xx, y = yy)
-         xx = xx + 130
-      yy = yy + 60
-      xx = 20 
-def drawTable1(table,sentence):
+def drawTable(table,sentence, control):
    dt = Tk.Tk()
    size = len (sentence)
    dt.geometry("1280x600+50+50")
@@ -123,6 +97,6 @@ def drawTable1(table,sentence):
          xx = xx + 130
       yy = yy + 60
       xx = 20
-   
-   Q = Tk.Button(dt, text = "Next",fg = 'red', command = dt.destroy)
-   Q.pack(side = Tk.BOTTOM)
+   if control == 1:
+      Q = Tk.Button(dt, text = "Next",fg = 'red', command = dt.destroy)
+      Q.pack(side = Tk.BOTTOM)
